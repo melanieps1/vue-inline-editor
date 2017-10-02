@@ -1,0 +1,35 @@
+/* It's good to do this at the beginning when using frameworks, it will get rid of any defaults */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+#main {
+	height: 300px;
+	padding-top: 150px;
+	position: relative;
+}
+
+p {
+	background: #abd0ce;
+	color: #000;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+/* Before the paragraph */
+p:before {
+	content: "\270E   ";
+}
