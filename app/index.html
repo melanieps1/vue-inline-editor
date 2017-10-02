@@ -9,16 +9,16 @@
 	<h1>Inline Editor (Vue)</h1>
 
 	<!-- `v-cloak` hides things until Vue is loaded and ready (may need some additional CSS styling) -->
-	<div id="main" v-cloak>
+	<div id="main" v-cloak v-on:click="hideTooltip">
 		
 		<!-- `v-if` works like an if statement -->
-		<div class="tooltip" v-if="show_tooltip">
+		<div class="tooltip" v-on:click.stop v-if="show_tooltip">
 			<!-- `v-model` is a directive that tells Vue what to do -->
 			<input type="text" v-model="text_content"/>
 		</div>
 
 		<!-- `v-on:click` works like an onClick event listener -->
-		<p v-on:click="toggleTooltip">{{ text_content }}</p>
+		<p v-on:click.stop="toggleTooltip">{{ text_content }}</p>
 
 	</div>
 

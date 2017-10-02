@@ -24,6 +24,7 @@ body {
 p {
 	background: #abd0ce;
 	color: #000;
+	cursor: pointer;
 	font-size: 22px;
 	font-weight: bold;
 	padding: 10px;
@@ -32,4 +33,25 @@ p {
 /* Before the paragraph */
 p:before {
 	content: "\270E   ";
+}
+
+.tooltip {
+	left: 50%;
+	margin-left: -150px;
+	padding: 10px;
+	position: absolute;
+	top: 80px;
+	width: 290px;
+}
+
+.tooltip input {
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 2px 6px #bbb inset;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 34px;
+	outline: none;
+	text-align: center;
+	width: 100%;
 }
